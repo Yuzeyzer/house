@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  #hero {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  #hero .left {
+    font-family: 'Montserrat',sans-serif;
+    position: absolute;
+    top: 20%;
+    color: #000;
+    width: 35%;
+  }
+  
+  #hero .left h2 {
+    font-size: 3.6rem;
+  }
+  
+  #hero .left p {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+  }
+  
+  .more {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    color: rgba(207, 87, 18, 0.966);
+    border: 2px solid rgba(207, 87, 18, 0.966);
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .more:hover {
+    background-color: rgba(207, 87, 18, 0.966);
+    color: #fff;
+  }
+  
+  .scene,
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+  }
+  .right {
+    margin: 10rem 0 0 0;
+    float: right;
+  }
+  .right img {
+    max-width: 90%;
+  }

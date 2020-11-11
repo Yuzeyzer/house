@@ -1,0 +1,193 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+  }
+  .nav {
+      padding: 1.5rem 0;
+  }
+  .logo {
+      font-style: italic;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color:rgba(207, 87, 18, 0.966);
+      
+  }
+  .menu {
+      margin-left: 4rem;
+  }
+  .nav__item {
+    padding: 0 0 0 2rem;
+  }
+  .nav__link  {
+      position: relative;
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: rgba(207, 87, 18, 0.966);
+  }
+  .nav__link:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.2rem;
+      background-color: rgba(207, 87, 18, 0.966);
+      bottom: -0.5rem;
+      transform: scale(0);
+      transition: 0.3s;
+  }
+  .nav__link:hover:before {
+      transform: scale(1);
+  }
+  .nav__search_block {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .search_block {
+      display: flex;
+      background-color: #fff;
+      border: 0.2rem solid rgba(207, 87, 18, 0.966);
+      border-radius: 3rem;
+      width: 50%;
+      z-index: 1;
+  }
+
+  .search__input {
+      padding-left: 5%;
+      width: 90%;
+      height: 2.5rem;
+      z-index: 2;
+      border-radius: 3rem;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      color: rgba(207, 87, 18, 0.466);
+  }
+  .search__btn {
+        color: rgba(207, 87, 18, 0.466);
+        font-size: 1.7rem;
+        width: 10%;
+        margin-top: 0.2rem;
+        margin-right: 1rem;
+        text-decoration: none;
+  }
+  .nav__personal_item {
+      width: 15%;
+  }
+  .auth {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+  .auth_link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #6f6f6f;
+      font-weight: bold;
+      font-size: 1.6rem;
+      transition: 0.3s;
+  }
+  .auth_link i {
+      padding: 0 0.5rem;
+      font-size: 2rem;
+      color: #e01533;
+  }
+  .auth_link:hover {
+      color: #e01533;
+  }
+  .mobile__btn {
+    position: fixed;
+    right: 6rem;
+    top: 6rem;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 7rem;
+    height: 7rem;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .mobile__btn span {
+    position: relative;
+    height: 0.3rem;
+    width: 70%;
+    background-color: rgba(207, 87, 18, 1);
+  }
+  
+  .mobile__btn span::before, .mobile__btn span::after {
+    content: '';
+    position: absolute;
+    height: 0.3rem;
+    width: 100%;
+    background-color: rgba(207, 87, 18, 1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .mobile__btn span::before {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  
+  .mobile__btn span::after {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  
+  .mobile__btn_active span {
+    height: 0;
+  }
+  
+  .mobile__btn_active span::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  .mobile__btn_active span::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .nav-list-active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(207, 87, 18, 1);
+  }
+  
+  .nav-list-active li {
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
+  .nav-list-active li a {
+    color: #fff;
+  }
